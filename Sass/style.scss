@@ -1,0 +1,110 @@
+@import "variables";
+@import "utilities";
+@import "animations";
+@import "./Components/header";
+@import "./Components/popup";
+@import "./Components/contact";
+@import "./Components/footer";
+@import "./global";
+
+/* Individual Styles */
+/* Projects  */
+.project{
+    display: flex;
+    justify-content: space-around;
+    > * {
+        align-self: center;
+    }
+    &-img{
+        width: 60%;
+        border: 10px solid $light-col-3;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &-content{
+        background: $light-col-1;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+/* Services */
+#services{
+    animation: fromBottom 0.8s cubic-bezier(0.4,0.5,0.9,1);
+    h2{
+        margin: 0;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(270px, 1fr));
+        gap: 50px;
+    }
+    img{
+        width: 250px;
+        height: 250px;
+    }
+    .service{
+        padding: 2rem;
+        position: relative;
+    }
+    .step-process{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background: $primary-col;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        margin-top: -15px;
+        margin-left: -15px;
+    }
+}
+
+/* About */
+#about{
+    #avatar{
+        margin-top: 3rem;
+        width: 300px;
+        height: 300px;
+    }
+    #skills{
+        .skill{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 10px 0;
+            .progress{
+                background: $primary-col;
+                height: 10px;
+            }
+            &:nth-child(1) .progress{
+                width: 80%;
+            }
+            &:nth-child(2) .progress{
+                width: 75%;
+            }
+            &:nth-child(3) .progress{
+                width: 70%;
+            }
+        }
+        img{
+            width: 150px;
+            height:150px;
+        }
+    }
+}
+
+@import "./media";

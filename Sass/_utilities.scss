@@ -1,0 +1,208 @@
+/* Utility Classes */
+.d{
+    &-inline-block{
+        display: inline-block;
+    }
+    &-block{
+        display: block;
+    }
+    &-flex{
+        display: flex;
+    }
+}
+.text{
+    // Transforming text
+    &-uppercase{
+        text-transform: uppercase;
+    }
+    &-capitalize{
+        text-transform: capitalize;
+    }
+    &-lowercase{
+        text-transform: lowercase;
+    }
+
+    &-center{
+        text-align: center;
+    }
+    &-left{
+        text-align: left;
+    }
+    &-right{
+        text-align: right;
+    }
+    &-primary{
+        color: $primary-col;
+        &-light-1{
+            color: $primary-light-col-1;
+        }
+        &-light-2{
+            color: $primary-light-col-2;
+        }
+        &-dark-1{
+            color: $primary-dark-col-1;
+        }
+        &-dark-2{
+            color: $primary-dark-col-2;
+        }
+    }
+    &-dark{
+        &-1{
+            color: $dark-col-1;
+        }
+        &-2{
+            color: $dark-col-2;
+        }
+        &-3{
+            color: $dark-col-2;
+        }
+        &-4{
+            color: $dark-col-4;
+        }
+    }
+    &-light{
+        &-1{
+            color: $light-col-1;
+        }
+        &-2{
+            color: $light-col-2;
+        }
+        &-3{
+            color: $light-col-3;
+        }
+        &-4{
+            color: $light-col-4;
+        }
+    }
+}
+.bg{
+    &-dark-1{
+        background: $dark-col-1;
+    }
+    &-dark-2{
+        background: $dark-col-2;
+    }
+    &-dark-3{
+        background: $dark-col-2;
+    }
+    &-dark-4{
+        background: $dark-col-4;
+    }
+    &-light-1{
+        background: $light-col-1;
+    }
+    &-light-2{
+        background: $light-col-2;
+    }
+    &-light-3{
+        background: $light-col-3;
+    }
+    &-light-4{
+        background: $light-col-4;
+    }
+    &-primary{
+        background: $primary-col;
+    }
+}
+.btn
+{
+        border: none;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.5s all;
+        border-radius: 0;
+        cursor: pointer;
+        position: relative;
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        transition: 0.8s all;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &:hover::after{
+        opacity: 0;
+        transform: scalex(1.5) scaleY(2);
+        z-index: 1;
+    }
+    
+    &-light{
+        border: 3px solid $light-col-2;
+        background: $light-col-2;
+        color: $dark-col-2;
+    }
+    &-light:hover{
+        border: 3px solid $dark-col-1;
+        background: $dark-col-1;
+        color: $light-col-1;
+    }
+    &-light:hover::after{
+        background: $dark-col-1;
+    }
+    
+    &-transparent{
+        border: 3px solid $light-col-2;
+        color: $light-col-2;
+    }
+    &-transparent:hover{
+        border: 3px solid $light-col-2;
+        background: $light-col-2;
+        color: $dark-col-2;
+    }
+    &-transparent:hover::after{
+        background: $light-col-2;
+    }
+    
+    &-primary{
+        background: $primary-col;
+        color: $light-col-2;
+        border: 3px solid $primary-col;
+    }
+    &-primary:hover{
+        background: $primary-dark-col-1;
+        color: $light-col-2;
+        border: 3px solid $primary-dark-col-1;
+    }
+    &-primary:hover::after{
+        background: $primary-col;
+    }
+    
+    &-primary-dark-col-1{
+        background: $primary-dark-col-1;
+        color: $light-col-2;
+        border: 3px solid $primary-dark-col-1;
+    }
+    &-primary-dark-col-1:hover{
+        background: $primary-dark-col-2;
+        color: $light-col-2;
+        border: 3px solid $primary-dark-col-2;
+    }
+    &-primary-dark-col-1::after{
+        background: $primary-dark-col-2;
+    }
+    &:hover::after{
+        opacity: 0;
+        transform: scalex(1.5) scaleY(2);
+        z-index: 1;
+    }
+}
+.rounded-pill{
+    border-radius: 150px;
+    &:after{
+        border-radius: 150px;
+    }
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid $light-col-1;
+}
+.box-shadow{
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}

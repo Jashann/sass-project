@@ -1,0 +1,14 @@
+{
+  "name": "portfolic_minimilistic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch Sass/style.scss Dist/Resources/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

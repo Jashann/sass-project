@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Quicksand',Arial,sans-serif;
+    color: $dark-col-4;
+    background: $light-col-4;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: $dark-col-2;
+}
+a:hover{
+    cursor: pointer;
+}
+img{
+    width: 60px;
+    height: 60px;
+} 
