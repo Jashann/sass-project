@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "sass --watch Sass/style.scss Dist/Resources/css/style.css"
+    "compile": "sass --watch Src/style.scss Dist/Resources/css/style.css"
   },
   "author": "",
   "license": "ISC",

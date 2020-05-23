@@ -7,7 +7,8 @@
     <meta name="keywords" content="">
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/feb7c09e30.js" crossorigin="anonymous"></script>
+    <script src="0https://kit.fontawesome.com/feb7c09e30.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./Vendors/favicon/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./Resources/css/customBootstrap.css">
     <link rel="stylesheet" href="./Resources/css/style.css">
     <title>Jashanjot-Portfolio</title>
@@ -25,11 +26,11 @@
                    <div id="overlay">
                         <div id="nav">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="./services.html">Services</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a class="btn-animated-nav" href="#">Home</a></li>
+                                <li><a class="btn-animated-nav" href="#projects">Projects</a></li>
+                                <li><a class="btn-animated-nav" href="./services.html">Services</a></li>
+                                <li><a class="btn-animated-nav" href="./about.html">About</a></li>
+                                <li><a class="btn-animated-nav" href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,7 +44,7 @@
                 <h1 class="text-uppercase">I am a web developer...</h1>
                 <h3 class="text-uppercase">I can help you grow your business</h3>
                 <div>
-                    <a href="./about.html" class="btn btn-transparent">Learn More</a>
+                    <a href="./about.html" class="btn btn-animated-light">Learn More</a>
                     <a href="#contact" class="btn btn-light">Contact Me</a>
                 </div>
                 <a id="scrolldown" href="#projects"><img src="./Vendors/scrolldown.svg" alt="" srcset=""></a>
@@ -53,45 +54,14 @@
     <!-- End of Main-header -->
 
     <!-- Start of Projects -->
-    <section id="projects" class="text-center">
+    <section id="projects" class="text-center py-5">
         <div class="container">
-            <h1 id="projects-heading" class="text-center text-uppercase">Work</h1>
-            <h2 class="text-primary">DesignX</h2>
+            <h1 id="projects-heading" class="text-center text-uppercase m-0">Work</h1>
+
+            <h2 class="text-primary">Smart Dictionary</h2>
             <div class="project">
                 <div class="project-img box-shadow">
-                    <img src="./Resources/projects/designx.jpg" alt="">
-                </div>
-                <div class="project-content box-shadow">
-                    <div class="mb-3">
-                        <h3 class="text-uppercase text-primary">Technologies Used</h3>
-                        <img src="./Vendors/Usage/html5.svg" alt="">
-                        <img src="./Vendors/Usage/css3.svg" alt="">
-                        <img src="./Vendors/Usage/javascript.svg" alt="">
-                        <img src="./Vendors/Usage/github-repository.svg" alt="">
-                        <img src="./Vendors/Usage/visualstudio-microsoft.svg" alt="">
-                    </div>
-                    <div class="project-btns">
-                        <a target="_blank" href="https://jashann.github.io/jashann.designx.io/" class="btn btn-primary">Visit Now</a>
-                        <a href="#popup-1" class="btn btn-light">Learn More</a>
-                    </div>
-                </div>
-                <div id="popup-1" class="popup">
-                    <div class="popup-container">
-                        <h1 class="text-primary">DesignX</h1>
-                        <span class="close"> &times; </span>
-                        <p>It is a simple and Minimalistic template. UI is light in color to show aesthetic of simplistic design. It is made to show case UI making skills. Colors are kept at minimal level to not distract viewers.</p>
-                        <p class="mt-2">The site is completely responsive, supporting all screens. It is made using HTML, CSS and JQuery.</p>
-                        <h4 class="text-dark-4">Visit Website to get clear picture of DesignX</h4>
-                        <div class="popup-btns">
-                            <a class="d-inline-block btn btn-primary rounded-pill" target="_blank" href="https://jashann.github.io/jashann.designx.io/" class="btn btn-primary">Visit Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="text-primary">Discovero</h2>
-            <div class="project">
-                <div class="project-img box-shadow">
-                    <img src="./Resources/projects/discovero.jpg" alt="">
+                    <img src="./Resources/projects/smart_dictionary.jpg" alt="">
                 </div>
                 <div class="project-content box-shadow">
                     <div class="mb-3">
@@ -103,24 +73,26 @@
                         <img src="./Vendors/Usage/visualstudio-microsoft.svg" alt="">
                         <img src="./Vendors/Usage/api.svg" alt="" srcset="">
                     </div>
-                    <div class="project-btns">
-                        <a target="_blank" href="https://discovero.in" class="btn btn-primary">Visit Now</a>
-                        <a href="#popup-2" class="btn btn-light">Learn More</a>
+                    <div class="project-btns mt-3">
+                        <a target="_blank" href="https://jashann.github.io/Smart-Dictionary/" class="btn btn-animated-project-light">Visit Now</a>
+                        <a href="#popup-2" class="btn btn-animated-project-light">Learn More</a>
                     </div>
                 </div>
                 <div id="popup-2" class="popup">
                     <div class="popup-container">
-                        <h1 class="text-primary">DiscoverO</h1>
+                        <h1 class="text-primary">Smart Dictionary</h1>
                         <span class="close"> &times; </span>
-                        <p> Discovero is a web based dictionary it supports bookmarking, pronouncing and speech dictating features etc...</p>
-                        <p class="mt-2">DiscoverO is completely responsive, supporting all screens. It is made using HTML, CSS and Javascript, Web APIs</p>
-                        <h4 class="text-dark-4">Visit Website to get clear picture of DiscoverO</h4>
+                        <p> Smart Dictionary is a web based dictionary it supports <b> quick suggestions, bookmarking, pronouncing and speech dictating features </b> etc...</p>
+                        <p class="mt-2">Smart Dictionary is completely responsive, supporting all screens. It is made using HTML, CSS and Javascript, Web APIs</p>
+                        <h4 class="text-dark-4">Visit Website to get clear picture of Smart Dictionary</h4>
                         <div class="popup-btns">
-                            <a class="d-inline-block btn btn-primary rounded-pill" target="_blank" href="https://jashann.github.io/jashann.designx.io/" class="btn btn-primary">Visit Now</a>
+                            <a class="d-inline-block btn btn-primary rounded-pill" target="_blank" href="https://jashann.github.io/Smart-Dictionary/">Visit Now</a>
+                            <a class="d-inline-block btn btn-gradient rounded-pill" target="_blank" href="https://github.com/jashann/Smart-Dictionary/">Source Code</a>
                         </div>
                     </div>
                 </div>
             </div>
+        
             <h2 class="text-primary">Portfolio Grid </h2>
             <div class="project">
                 <div class="project-img box-shadow">
@@ -136,8 +108,8 @@
                         <img src="./Vendors/Usage/visualstudio-microsoft.svg" alt="">
                     </div>
                     <div class="project-btns">
-                        <a target="_blank" href="https://jashann.github.io/portfolio/" class="btn btn-primary">Visit Now</a>
-                        <a href="#popup-3" class="btn btn-light">Learn More</a>
+                        <a target="_blank" href="https://jashann.github.io/portfolio/" class="btn btn-animated-project-light">Visit Now</a>
+                        <a href="#popup-3" class="btn btn-animated-project-light">Learn More</a>
                     </div>
                 </div>
                 <div id="popup-3" class="popup">
@@ -148,11 +120,13 @@
                         <p class="mt-2">The site is completely responsive, supporting all screens. It is made using HTML, CSS and Bootstrap</p>
                         <h4 class="text-dark-4">Visit Website to get clear picture of Portfolio Grid</h4>
                         <div class="popup-btns">
-                            <a class="d-inline-block btn btn-primary rounded-pill" target="_blank" href="https://jashann.github.io/portfolio/" class="btn btn-primary">Visit Now</a>
+                            <a class="d-inline-block btn btn-primary rounded-pill" target="_blank" href="https://jashann.github.io/portfolio/">Visit Now</a>
+                            <a class="d-inline-block btn btn-gradient rounded-pill" target="_blank" href="https://github.com/Jashann/portfolio">Source Code</a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <h2 class="text-primary">Portfolio Minimalistic </h2>
             <div class="project">
                 <div class="project-img box-shadow">
@@ -167,8 +141,8 @@
                         <img src="./Vendors/Usage/visualstudio-microsoft.svg" alt="">
                     </div>
                     <div class="project-btns">
-                        <a target="_blank" href="https://jashann.github.io/Jashann.github.io-porfolio1/" class="btn btn-primary">Visit Now</a>
-                        <a href="#popup-4" class="btn btn-light">Learn More</a>
+                        <a target="_blank" href="https://jashann.github.io/Jashann.github.io-porfolio1/" class="btn btn-animated-project-light">Visit Now</a>
+                        <a href="#popup-4" class="btn btn-animated-project-light">Learn More</a>
                     </div>
                 </div>
                 <div id="popup-4" class="popup">
@@ -179,7 +153,8 @@
                         <p class="mt-2">The site is completely responsive, supporting all screens. It is made using HTML without using any framework.</p>
                         <h4 class="text-dark-4">Visit Website to get clear picture of DesignX</h4>
                         <div class="popup-btns">
-                            <a class="d-inline-block btn btn-primary rounded-pill" target="_blank" href="https://jashann.github.io/Jashann.github.io-porfolio1/" class="btn btn-primary">Visit Now</a>
+                            <a class="d-inline-block btn btn-primary rounded-pill" target="_blank" href="https://jashann.github.io/Jashann.github.io-porfolio1/">Visit Now</a>
+                            <a class="d-inline-block btn btn-gradient rounded-pill" target="_blank" href="https://github.com/jashann/porfolio1/">Source Code</a>
                         </div>
                     </div>
                 </div>

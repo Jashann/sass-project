@@ -1,0 +1,245 @@
+/* Utility Classes */
+.d{
+    &-inline-block{
+        display: inline-block;
+    }
+    &-block{
+        display: block;
+    }
+    &-flex{
+        display: flex;
+    }
+}
+.text{
+    // Transforming text
+    &-uppercase{
+        text-transform: uppercase;
+    }
+    &-capitalize{
+        text-transform: capitalize;
+    }
+    &-lowercase{
+        text-transform: lowercase;
+    }
+
+    &-center{
+        text-align: center;
+    }
+    &-left{
+        text-align: left;
+    }
+    &-right{
+        text-align: right;
+    }
+    &-primary{
+        color: $primary-col;
+        &-light-1{
+            color: $primary-light-col-1;
+        }
+        &-light-2{
+            color: $primary-light-col-2;
+        }
+        &-dark-1{
+            color: $primary-dark-col-1;
+        }
+        &-dark-2{
+            color: $primary-dark-col-2;
+        }
+    }
+    &-dark{
+        &-1{
+            color: $dark-col-1;
+        }
+        &-2{
+            color: $dark-col-2;
+        }
+        &-3{
+            color: $dark-col-2;
+        }
+        &-4{
+            color: $dark-col-4;
+        }
+    }
+    &-light{
+        &-1{
+            color: $light-col-1;
+        }
+        &-2{
+            color: $light-col-2;
+        }
+        &-3{
+            color: $light-col-3;
+        }
+        &-4{
+            color: $light-col-4;
+        }
+    }
+}
+.bg{
+    &-dark-1{
+        background: $dark-col-1;
+    }
+    &-dark-2{
+        background: $dark-col-2;
+    }
+    &-dark-3{
+        background: $dark-col-2;
+    }
+    &-dark-4{
+        background: $dark-col-4;
+    }
+    &-light-1{
+        background: $light-col-1;
+    }
+    &-light-2{
+        background: $light-col-2;
+    }
+    &-light-3{
+        background: $light-col-3;
+    }
+    &-light-4{
+        background: $light-col-4;
+    }
+    &-primary{
+        background: $primary-col;
+    }
+}
+.btn
+{
+    border: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s all;
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+
+    &-transparent{
+        border: 1px solid #fff;
+        color: #fff;
+
+        &:hover{
+            background: #fff;
+            color: #000;
+        }
+    }
+    &-light{
+        border: 1px solid #fff;
+        background: #fff;
+        color: #000;
+        &:hover{
+            background: rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+    }
+    &-primary{
+        background: $primary-col;
+        color: #fff;
+        &:hover{
+            background: $primary-dark-col-1;
+        }
+    }
+    &-gradient{
+        background: $linear-gradient;
+        color: #fff;
+        
+    }
+
+    @mixin btn-amimated($background,$text){
+        border: 1px solid transparent;
+        border-color: $background;
+        color: $background;
+        transition: all .3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    @mixin btn-amimated-after($background:transparent){
+        content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent; 
+            z-index: -2;
+    }
+    @mixin btn-amimated-before($background){
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: $background;
+        transition: all .3s;
+        z-index: -1;
+    }
+    @mixin btn-amimated-hover($text){
+        color: $text;
+        &:before {
+            width: 100%;
+        }
+    }
+
+    &-animated-light{
+        //bg & text
+        @include btn-amimated(#fff,#000);
+        &:after {
+            @include btn-amimated-after();
+        }
+        &:before {
+           @include btn-amimated-before(#fff);
+        }
+        &:hover {
+           @include btn-amimated-hover(#000);
+        }
+    }
+    &-animated-nav{
+        //bg & text
+        @include btn-amimated(transparent,transparent);
+        &:after {
+            @include btn-amimated-after();
+        }
+        &:before {
+           @include btn-amimated-before($primary-col);
+        }
+        &:hover {
+           @include btn-amimated-hover(#fff);
+        }
+    }
+    &-animated-project-light{
+        //bg & text
+        @include btn-amimated(#fff,#000);
+        border: 1px solid transparent;
+        background: rgba(255,255,255,0.2);
+        &:after {
+            @include btn-amimated-after();
+        }
+        &:before {
+           @include btn-amimated-before(#fff);
+        }
+        &:hover {
+           @include btn-amimated-hover(#000);
+        }
+    }
+    
+}
+.rounded-pill{
+    border-radius: 150px;
+    &:after{
+        border-radius: 150px;
+    }
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid $light-col-1;
+}
+.box-shadow{
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+

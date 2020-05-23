@@ -1,0 +1,83 @@
+@media (min-width:1390px)
+{
+    #projects
+    {
+        .project-content
+        {
+        padding: 2rem 0;
+        .project-btns
+        {
+            margin: 2rem 0;
+        }
+        }
+    }
+}
+@media only screen and (max-width:1210px){
+    #projects {
+        clip-path: polygon(0 2%, 100% 0, 100% 97%, 0% 100%);
+        .project{
+            flex-direction: column;
+            margin-bottom: 5rem;
+            > div{
+                width: 100%;
+            }
+            .project-btns{
+                a{
+                   
+                }
+            }
+            .project-img{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    /* Universal */
+    .container{
+        width: 96%;
+    }
+
+    #navbar .social-media{
+        display: none;
+    }
+    #projects{
+        .project-content img{
+            width: 80px;
+            height: 80px;
+        }
+        .project-btns{
+            margin: 2rem 0 0 0;
+            a{
+                display: inline;
+            }
+        }
+    }
+        
+    #main-footer .social-media img{
+        width: 35px;
+        height: 35px;
+    }
+    #about #skills
+    {
+        .skill:nth-child(1) .progress{
+            width: 50%;
+        }
+        .skill:nth-child(2) .progress{
+            width: 45%;
+        }
+        .skill:nth-child(3) .progress{
+            width: 48%;
+        }
+    }
+}
+@media only screen and (max-width:360px){
+    #projects .project-btns a{
+        display: block;
+    }
+}
+@media only screen and (max-width:320px){
+    .btn{
+        display: block;
+    }
+}

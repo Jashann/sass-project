@@ -1,0 +1,39 @@
+/* Popup */
+.popup{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3000;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    opacity: 0;
+    visibility: hidden; 
+    transition: 0.8s all;
+
+    &-container{
+        background: $light-col-3;
+        padding: 1rem 2rem;
+        width: 96%;
+        max-width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+        .close{
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            transform: scale(2.5);
+            cursor: pointer;
+            &:hover{
+                color: $primary-col;
+            }
+        }
+    }
+}
+.show{
+    opacity: 1;
+    visibility: visible; 
+}

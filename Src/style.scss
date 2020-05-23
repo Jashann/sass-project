@@ -1,0 +1,127 @@
+@import "./customBootstrap";
+@import "variables";
+@import "utilities";
+@import "animations";
+@import "./Components/header";
+@import "./Components/popup";
+@import "./Components/contact";
+@import "./Components/footer";
+@import "./global";
+
+/* Individual Styles */
+/* Projects  */
+#projects{
+    // background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    background: $linear-gradient; 
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 4%, 100% 0, 100% 97%, 0% 100%);
+
+    &-heading{
+        font-size: 2em;
+        text-transform: capitalize;
+    }
+    .project{
+        display: flex;
+        justify-content: space-around;
+        > * {
+            align-self: center;
+        }
+        &-img{
+            width: 60%;
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &-content{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            
+        }
+    }
+}
+
+/* Services */
+#services{
+    background: $linear-gradient;
+    animation: fromBottom 0.8s cubic-bezier(0.4,0.5,0.9,1);
+    h2{
+        margin: 0;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(270px, 1fr));
+        gap: 50px;
+    }
+    img{
+        width: 250px;
+        height: 250px;
+    }
+    .service{
+        padding: 2rem;
+        position: relative;
+    }
+    .step-process{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        margin-top: -15px;
+        margin-left: -15px;
+    }
+}
+
+/* About */
+#about{
+    background: $linear-gradient;
+    #avatar{
+        margin-top: 3rem;
+        width: 300px;
+        height: 300px;
+    }
+    #skills{
+        // background: rgba(255, 255, 255,0.5);
+        .skill{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 10px;
+            .progress{
+                background: $primary-col;
+                height: 10px;
+            }
+            &:nth-child(1) .progress{
+                width: 80%;
+            }
+            &:nth-child(2) .progress{
+                width: 75%;
+            }
+            &:nth-child(3) .progress{
+                width: 78%;
+            }
+        }
+        img{
+            width: 150px;
+            height:150px;
+        }
+    }
+}
+
+@import "./media";
